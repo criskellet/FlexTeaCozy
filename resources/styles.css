@@ -1,0 +1,162 @@
+
+/* Styles for the body */
+
+body {
+    margin:0;
+    font-family: "Helvetica", sans-serif;
+    font-size:22px;
+    color:seashell;
+    background-color: black;
+    opacity:0.9;
+    text-align:center;
+}
+
+/* Styles for the headings */
+h2,
+h4 {
+    background-color:black;
+    color:seashell;
+    margin:0;
+    padding:10px;
+    width:1200px;
+    text-align:center;
+    
+}
+h2 {
+    font-size:1.5em;
+    font-weight:bold;
+}
+h3 {
+    font-size:1.17em;
+}
+h5 {
+    font-size:0.83em;
+}
+
+/****************************************/
+/* Must set a height for header-container */
+/****************************************/
+/*
+header-container has two divs in, by using space-between will
+have one div on the left and the other on the right
+*/
+
+.header-container {
+    background-color:black;
+    height:69px;
+    width:100%; 
+    margin:auto;
+    border-bottom:1px solid seashell;
+    display:flex;
+    justify-content:space-between;
+    position:fixed;
+    z-index:5;  /* Ensure this comes to the front */
+   
+}
+
+/* Style for the logo */
+.header-container img {
+    padding-left:10px;
+    height:50px;  
+}
+
+/* Underline the navigation text */
+nav a {
+    text-decoration:underline;
+    color:seashell;   
+}
+
+/* Display navigation items next to each other*/
+nav span {
+    display:inline-block;
+    padding: 20px 10px;   
+}
+
+/* Styles for the mission container */
+.mission-container {
+    opacity:0.9;
+    margin:auto;
+    background-image: url("../resources/images/img-mission-background.png");
+    background-repeat:no-repeat;
+    width: 1200px;
+    height:700px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.feature-container {
+    width:1200px;
+    height:700px;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap:wrap;
+}
+
+.feature-container img {
+    width:300px;
+    height:200px;
+}
+.feature-container figcaption {
+    padding-top:10px;
+}
+
+.feature-container figure {
+    display:inline-block;
+}
+
+/* Location container styles */
+.location-container {
+    margin:auto;
+    width: 1200px;
+    height:500px;
+    display: flex;
+    justify-content: space-around; /* space evenly with space on left and right */
+    background-image: url("../resources/images/img-locations-background.png");
+    background-repeat:no-repeat;
+    flex-wrap:wrap;
+    align-items:flex-start;  /* position items at top of parent container */
+}
+/* Text color is white and ensure backgroung shows through */
+.location-container h2 {
+    color:white;
+    background-color:inherit;
+    width:1200px;   /* Display heading on own line */
+    padding-bottom:15px;
+    
+}
+
+.location-heading {
+    opacity:1;
+}
+
+.location-square {
+    background-color:black;
+    width:300px;
+    display:block;    
+}
+
+.contact-container {
+    width:1200px;
+    height:200px;
+    margin:auto;
+    display:flex;
+    
+}
+
+.contact-container h2,
+.contact-container h5 {
+    width : 1200px; /* Need this to make it center on whole line */
+    text-align:center;
+    display:block;  
+}
+
+/* Styles for the footer */
+footer {
+    padding-left:20px;
+    text-align: left;
+}
+
